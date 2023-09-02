@@ -1,0 +1,51 @@
+#game .row {
+    height: 12em;
+    width: 75em;
+    margin: auto;
+    width: 75%;
+}
+
+.cell.border {
+    border: solid 6px black !important;
+  }
+  .cell.border-bottom {
+    border-bottom: solid 6px  black !important;
+  }
+  .cell.border-top {
+    border-top: solid 6px  black !important;
+  }
+  .cell.border-start {
+    border-left: solid 6px  black !important;
+  }
+  .cell.border-end {
+    border-right: solid 6px  black !important;
+  }
+
+  i.bi-circle {
+    color: red;
+    font-size: 100px;
+  }
+
+  i.bi-x-lg {
+     color: gold;
+     font-size: 100px
+  }
+
+#button-1 {
+    background-color: black;
+    color: Red;
+    border: 2px solid gold;
+}
+
+#turnIndicator {
+  border: 3px dotted gold;
+  display: inline-block;
+  padding: 25px;
+}
+
+
+#header-image {
+  width: 10em;
+  height: 10em;
+  margin-left: 50px;
+}

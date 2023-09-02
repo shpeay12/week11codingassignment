@@ -1,0 +1,77 @@
+<!--
+ Using any of the tools you've worked with so far, create a game of Tic-Tac-Toe.
+    Create a Tic-Tac-Toe game grid using your HTML element of choice.
+    When a cell in the grid is clicked, an X or O should appear in that spot depending on whose turn it is.
+    A heading should say whether it is X's or O's turn and change with each move made.
+    A button should be available to clear the grid and restart the game.
+    When a player has won, or the board is full and the game results in a draw, a Bootstrap alert or similar Bootstrap component should appear across 
+    the screen announcing the winner.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="tictactoe.css" rel="stylesheet" />
+</head>
+<body class="bg-dark">
+    <div class="container header-wrapper"> <!--Creates a header with a h1 and image.-->
+        <div class="d-flex justify-content-center align-items-center">
+            <h1 class="text-warning mr-3">Tic-Tac-Toe</h1>
+            <img id="header-image" class="img-fluid ml-3" src="https://play-lh.googleusercontent.com/zPxLgj5nvl20ahJV7aFC6S5mD8kii5CEEDj25j1P9CYAfXL9sdDuO-8eES0r4DhJHrU">
+        </div>
+    </div>
+    
+    <div class="container">
+        <h3 class="text-center text-warning">Welcome to a fun game of Tic-Tac-Toe. To win this game, you must either get three X or three O in a row
+            in order to win the game. This can be vertically, horizontally or diagonally. Good luck!
+        </h3>
+    </div>
+    <hr />
+
+    <div class="container text-center text-info"> <!--Creates a message that will change with JavaScript to say who's turn it is.-->
+        <h2 id="turnIndicator">Player X's Turn</h2>
+    </div>
+
+    <div class="container text-center"> <!--Creates a button to reset the game.-->
+        <button id="button-1" type="button">Reset Game</button>
+    </div>
+    <hr />
+
+    
+
+<div class="container text-center"> <!--Creates the tic-tac-toe board-->
+    <div id="game">
+        <div class="row">
+            <div class="col-4 cell border-bottom" data-cell="0"></div> <!--Uses data-cell to give an ID to the cell to connect with JS-->
+            <div class="col-4 cell border-bottom border-start border-end" data-cell="1"></div>
+            <div class="col-4 cell border-bottom" data-cell="2"></div>
+          </div>
+          <div class="row">
+            <div class="col-4 cell" data-cell="3"></div>
+            <div class="col-4 cell border-start border-end" data-cell="4"></div>
+            <div class="col-4 cell" data-cell="5"></div>
+          </div>
+          <div class="row bottom">
+            <div class="col-4 cell border-top" data-cell="6"></div>
+            <div class="col-4 cell border-top border-start border-end" data-cell="7"></i></div>
+            <div class="col-4 cell border-top" data-cell="8"></div>
+          </div>
+</div>
+<hr />
+
+<div class="container bg-dark"> <!--Creates a footer for the page.-->
+    <footer>
+        <h4 class="text-warning">Thanks for playing!</h4>
+    </footer>
+</div>
+        
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="tictactoe.js"></script>
+</body>
+</html>
